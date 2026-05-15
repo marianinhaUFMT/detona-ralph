@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../images/wall.png");
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: gold 5px solid;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #54d1a7;
+}
+
+.enemy {
+    background-image: url("../images/ralph.png");
+    background-size: cover;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* pega o segundo filho dentro da classe menu-time e menu-score da tag h2 */
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+    text-align: center;
+
+}
